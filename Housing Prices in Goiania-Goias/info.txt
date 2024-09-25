@@ -1,0 +1,12 @@
+TYPE
+apartamentos
+studio
+quitinetes
+casas
+casas-de-condominio
+casas-de-vila
+cobertura
+flat
+loft
+terrenos-lotes-condominios
+fazendas-sitios-chacaras
