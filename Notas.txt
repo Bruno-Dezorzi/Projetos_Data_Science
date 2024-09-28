@@ -1,0 +1,56 @@
+1. Classificação
+Aplicação: Identificar a qual categoria uma nova observação pertence com base em dados de treinamento.
+
+Algoritmos:
+Logistic Regression: Usado para problemas de classificação binária.
+KNeighborsClassifier: Classifica com base na proximidade de pontos vizinhos; útil em classificações simples.
+Support Vector Machine (SVC): Eficaz em problemas com muitas dimensões; pode usar diferentes kernels.
+DecisionTreeClassifier: Cria uma árvore de decisão; fácil de interpretar.
+RandomForestClassifier: Um ensemble de árvores de decisão; melhora a precisão e reduz overfitting.
+GradientBoostingClassifier: Ensemble que cria árvores sequencialmente; bom para dados complexos.
+Naive Bayes: Útil em problemas de texto, como spam detection.
+Quadratic/Linear Discriminant Analysis (QDA/LDA): Usado quando as classes têm diferentes distribuições.
+2. Regressão
+Aplicação: Prever um valor contínuo com base em variáveis independentes.
+
+Algoritmos:
+Linear Regression: A relação linear entre as variáveis; simples e eficaz.
+Ridge/Lasso/ElasticNet: Abordagens que adicionam regularização para evitar overfitting.
+KNeighborsRegressor: Regressores baseados na média dos vizinhos mais próximos.
+Support Vector Regressor (SVR): Semelhante ao SVC, mas para problemas de regressão.
+DecisionTreeRegressor: Bom para capturar relações não lineares.
+RandomForestRegressor: Constrói várias árvores para melhorar a precisão da previsão.
+GradientBoostingRegressor: Melhora previsões sequencialmente, lidando bem com não linearidades.
+3. Clustering
+Aplicação: Agrupar dados em clusters ou grupos, onde os dados dentro de um grupo são mais semelhantes entre si do que entre grupos diferentes.
+
+Algoritmos:
+KMeans: Agrupa dados em um número fixo de clusters; fácil de usar.
+DBSCAN: Agrupamento baseado em densidade; útil para clusters de forma arbitrária.
+AgglomerativeClustering: Um método hierárquico que agrupa dados baseando-se em distâncias.
+MeanShift: Encontra clusters ao buscar densidades máximas; não precisa de número fixo de clusters.
+GaussianMixture: Modela dados como uma combinação de distribuições gaussianas; bom para clusters sobrepostos.
+4. Redução Dimensional
+Aplicação: Reduzir a quantidade de variáveis em um conjunto de dados, preservando o máximo de informação possível.
+
+Algoritmos:
+PCA: Transforma variáveis correlacionadas em um conjunto menor de variáveis não correlacionadas.
+KernelPCA: PCA com transformações não lineares; útil para dados complexos.
+t-SNE: Excelente para visualização em 2D/3D de dados de alta dimensão.
+UMAP: Similar ao t-SNE, mas geralmente mais rápido e preserva a estrutura global.
+5. Model Selection
+Aplicação: Selecionar o melhor modelo e ajustar hiperparâmetros para melhorar o desempenho.
+
+Ferramentas:
+train_test_split: Divide os dados em conjuntos de treinamento e teste.
+GridSearchCV: Busca em grade para encontrar os melhores hiperparâmetros.
+RandomizedSearchCV: Busca aleatória em hiperparâmetros; mais rápida que a busca em grade.
+cross_val_score: Avalia o desempenho do modelo em várias divisões do conjunto de dados.
+6. Preprocessing
+Aplicação: Preparar dados antes de alimentá-los em um modelo de aprendizado de máquina.
+
+Ferramentas:
+StandardScaler: Normaliza os dados para ter média 0 e desvio padrão 1.
+MinMaxScaler: Escala as variáveis para um intervalo específico (normalmente [0, 1]).
+OneHotEncoder: Converte variáveis categóricas em uma forma que pode ser fornecida a algoritmos de ML.
+SimpleImputer: Lida com valores ausentes substituindo-os por estatísticas (média, mediana, etc.).
